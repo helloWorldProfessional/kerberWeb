@@ -1,0 +1,569 @@
+/*Dio CSS-a koji se odnosi na header, navbar*/
+body{
+    padding: 0px;
+    margin: 0px;
+    background: #379683;
+    background-size: cover;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+.sadrzaj{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    margin-top: 350px;
+    background: #edf5e1;
+    box-shadow: -1px 2px 20px 0px rgba(31,28,27,0.75);
+-webkit-box-shadow: -1px 2px 20px 0px rgba(31,28,27,0.75);
+-moz-box-shadow: -1px 2px 20px 0px rgba(31,28,27,0.75);
+    
+}
+/*Meni*/
+.slika{
+    margin-top: 0px;
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    z-index: -1;
+}
+.banner{
+    width: 100%;
+    height: 60px;
+    margin-top: 0px;
+    top: 0;
+    padding: 10px 0px;
+    background:rgba(0, 0, 0, 0.8);
+    text-align: right;
+    position: absolute;
+    float: left;
+    z-index:-1;
+}
+.nav{
+    width: 100%;
+    height: 60px;
+    padding: 10px 0px;
+    margin: 0px;
+    text-align: right;
+    position: relative;
+    z-index: 4;
+    margin-right: 0;
+}
+.meniLista{
+    display: inline-block;
+    
+    height: 60px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    z-index: 5;
+    
+}
+.link {
+    display: block;
+    min-width: 100px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+    background: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.meniLista:hover a{
+    background: #edf5e1;
+    color: black;
+    transform: scale(1.05);
+
+}
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox]:checked ~ .nav{
+    display: block;
+}
+.showMenu{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+    text-decoration: none;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.9);
+    color:white;
+    text-align: center;
+    padding: 10px 0;
+    display:none;
+    z-index: 5;
+    
+}
+@media screen and (max-width:760px){
+    
+    .nav{
+        position: static;
+        display:none;
+        z-index: 5;
+    }
+   
+    .slika{
+        min-height: 400px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .meniLista{
+        margin-bottom: 1px;
+        
+    }
+    .nav .meniLista, .meniLista .link{
+        width: 100%;
+    }
+    .showMenu{
+        
+        display: block;
+        margin-top: 0px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-weight: 600;
+        text-transform: uppercase;
+        z-index: 5;
+    }
+    .naslov{
+        font-size: 400%;
+        
+    }
+    .sadrzaj{
+        z-index: 0;
+        position: relative;
+        margin-top: 400px;
+
+    }
+    
+}
+.logo{
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    max-width: 65px;
+    max-height: 65px;
+    
+}
+
+.logoText{
+    float: left;
+    margin-left: 30px;
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+.footer{
+    width: 100%;
+    height: 60px;
+    margin-top: 160px;
+    background:rgba(0, 0, 0, .8);
+    text-align: left;
+    position: relative;
+}
+.footerText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 25px;
+    color: whitesmoke;
+    
+}
+@media screen and (max-width:760px){
+    
+    .nav{
+        text-align: left;
+        padding: auto;
+        position: static;
+    }
+    
+    .banner{
+        font-size: smaller;
+        top: 400px;
+        z-index: 1;
+        background:rgba(0, 0, 0, 0.97);
+    
+    }
+    .footerText{
+        font-size: smaller;
+    }
+    .naslov{
+        padding: 20px 0px 20px 0px;
+        font-size: 400%; 
+        text-align: center;
+    }
+    .logoText {
+        font-size: 120%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .container .box{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:320px){
+    .logo{
+        position: absolute;
+        visibility: collapse;
+    }
+    .logoText{
+        font-size: 100%;
+        text-align: left;
+    }
+    .naslov{
+        font-size: 400%; 
+        text-align: center;  
+    }
+    
+}
+.boxH{
+    width: 100%;
+    height: 60%;
+    margin:200px 15% 0px auto;
+    background:#edf5e1;
+    text-align: center;
+    
+}
+#para{
+    /*margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;*/
+    
+    color:black; 
+    background:  transparent;
+    font-size:30px; 
+    width: auto;
+    height: auto;
+    font-weight: 300;
+    margin-top: 190px; 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 70px;
+    padding-top: 20px;
+    padding-left: 20px; 
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+    text-align: left;
+    -webkit-box-shadow: 0px 20px 0px -10px #edf5e1, 0px -20px 0px -10px #edf5e1, 20px 0px 0px -10px #edf5e1, -20px 0px 0px -10px #edf5e1, 0px 0px 0px 10px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 20px 0px -10px #edf5e1, 0px -20px 0px -10px #edf5e1, 20px 0px 0px -10px #edf5e1, -20px 0px 0px -10px #edf5e1, 0px 0px 0px 10px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    
+}
+#paraM{
+    /*margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;*/
+    
+    color:black; 
+    background:  white;
+    font-size:30px; 
+    width: auto;
+    height: auto;
+    font-weight: 300;
+    margin-top: 190px; 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 70px;
+    padding-top: 20px;
+    padding-left: 20px; 
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+    text-align: center;
+    -webkit-box-shadow: 0px 20px 0px -10px #edf5e1, 0px -20px 0px -10px #edf5e1, 20px 0px 0px -10px #edf5e1, -20px 0px 0px -10px #edf5e1, 0px 0px 0px 10px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 20px 0px -10px #edf5e1, 0px -20px 0px -10px #edf5e1, 20px 0px 0px -10px #edf5e1, -20px 0px 0px -10px #edf5e1, 0px 0px 0px 10px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+   
+}
+#paraI{
+    color:black; 
+    background:  white; 
+    font-size:30px; 
+    width: auto;
+    height: auto;
+    font-weight: 300;
+    margin-top: 1px; 
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1px;
+    padding-top: 20px;
+    padding-left: 20px; 
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+    text-align: left;
+    -webkit-box-shadow: 0px 20px 0px -10px #edf5e1, 0px -20px 0px -10px #edf5e1, 20px 0px 0px -10px #edf5e1, -20px 0px 0px -10px #edf5e1, 0px 0px 0px 10px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 20px 0px -10px #edf5e1, 0px -20px 0px -10px #edf5e1, 20px 0px 0px -10px #edf5e1, -20px 0px 0px -10px #edf5e1, 0px 0px 0px 10px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+ 
+}
+.naslov{
+    
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 80px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 400%;
+    padding: 80px 0px 80px 0px;
+    text-align: center;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: #dfe6d5;
+    background-color: rgba(0, 0, 0, 0.85);
+    backface-visibility: hidden;
+    letter-spacing: 0.1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2ea9, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.5);
+
+     
+}
+/*Dio CSS-a koji se odnosi na Sticenike*/
+.container{
+    width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+    margin: 100px auto 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.container .box{
+    position: relative;
+    max-width: 295px;
+    max-height: 295px;
+    background: transparent;
+    margin: 25px;
+    box-sizing: border-box;
+    display: inline-block;
+    
+}
+
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+    
+}
+.container .box .imgBox img{
+    max-width: 100%; 
+    max-height: 100%;
+    transition: transform 2s;
+    
+}
+.container .box:hover .imgBox img{
+    transform: scale(1.3);
+    
+}
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background:#8ee4afb4;
+    transform: scaleY(0);
+    
+    
+}
+.container .box:hover .details{
+    transform: scaleY(1);
+    transition: transform 1.2s;
+    
+}
+.container .box .details .content{
+    position: absolute;
+    text-align: right;
+    margin-top: 60%;
+    padding-right: 1px;
+    padding-left: 50%;
+    transform: translateY(-50%);
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+    color:#05386b;
+    font-size:40px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 10;
+}
+#PocetnaLOGO{
+    
+    width: 25%;
+    position: relative;
+    margin-top: 80px;
+    margin-left:37%;
+    margin-right: 37%;
+}
+
+/*Kontakt dio*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+.fa:hover {
+    opacity: 0.7;
+  }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+.frame{
+max-width: 100%;
+max-height: 100%;
+margin: auto;
+}
+#paraFB{
+    color:black;
+    background-color: #80e2a6;
+    box-shadow: -1px 2px 20px 0px rgba(31,28,27,0.75);
+-webkit-box-shadow: -1px 2px 20px 0px rgba(31,28,27,0.75);
+-moz-box-shadow: -1px 2px 20px 0px rgba(31,28,27,0.75);
+    font-size:30px; 
+    width: auto;
+    font-weight: solid; 
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 80px;
+    margin-bottom: auto;
+    padding-top: 20px;
+    padding-left: 20px; 
+    padding-bottom: 40px;
+    padding-right: 20px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+    text-align: center;
+}
+/*Dio koji se odnosi na oNama*/
+#paraG{
+    /*margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;*/
+    
+    color:black; 
+    background:  white;
+    font-size:30px; 
+    width: auto;
+    height: auto;
+    font-weight: 300; 
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px; 
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+    text-align: left;
+    -webkit-box-shadow: 0px 20px 0px -10px #edf5e1, 0px -20px 0px -10px #edf5e1, 20px 0px 0px -10px #edf5e1, -20px 0px 0px -10px #edf5e1, 0px 0px 0px 10px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 20px 0px -10px #edf5e1, 0px -20px 0px -10px #edf5e1, 20px 0px 0px -10px #edf5e1, -20px 0px 0px -10px #edf5e1, 0px 0px 0px 10px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+ 
+}
+#paraB{
+    /*margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;*/
+    
+    color:black; 
+    background:  transparent;
+    font-size:30px; 
+    width: 80%;
+    height: auto;
+    font-weight: 300; 
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px; 
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+    text-align: left;
+     
+}
+#paraNaslov{
+    text-align: center;
+    background: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-top: 10px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+
+}
+#paraNaslovG{
+    text-align: center;
+    background: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 250%;
+    padding-top: 50px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+
+}
+#lista:hover{
+    text-emphasis: none;
+    text-decoration: none;
+    background:none;
+    font-weight: inherit;
+}
+
+.video{
+    position: relative;
+    width: 100%;
+    min-height: 460px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+/* Galerija */
+/* Ukljuciti: <link rel="stylesheet" type="text/css" href="lightbox.min.css" >
+    <script src="lightbox-plus-jquery.min.js"></script>*/
+.galerija{
+    
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    border-radius:0px;
+    padding-bottom: 50px;
+    
+  }
+  .galerija img{
+    transition:1s;
+    width: 20%;
+    padding-top: 30px;
+    padding-right: 0%;
+    padding-bottom: 10px;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 10%;
+    display: inline-block;
+    
+  }
+  .galerija img:hover{
+    transform: scale(1.2);
+  }
+  #galerija{
+      margin-top:280px;
+      background: #8ee4af;
+      color: black;
+      box-shadow: -1px 3px 30px 0px rgba(31,28,27,0.75),0px 20px 0px -10px #edf5e1, 0px -20px 0px -10px #edf5e1, 20px 0px 0px -10px #edf5e1, -20px 0px 0px -10px #edf5e1, 0px 0px 0px 10px #000000, 5px 5px 15px 5px rgba(0,0,0,0);-1px 3px 92px 58px rgba(255, 1, 1, 0.89) inset
+-webkit-box-shadow: -1px 3px 30px 0px rgba(31,28,27,0.75),0px 20px 0px -10px #edf5e1, 0px -20px 0px -10px #edf5e1, 20px 0px 0px -10px #edf5e1, -20px 0px 0px -10px #edf5e1, 0px 0px 0px 10px #000000, 5px 5px 15px 5px rgba(0,0,0,0); ;-1px 3px 92px 58px rgba(255, 1, 1, 0.89) inset
+-moz-box-shadow: -1px 3px 30px 0px rgba(31,28,27,0.75);}

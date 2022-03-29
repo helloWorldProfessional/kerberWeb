@@ -1,0 +1,84 @@
+.grid {
+    display: grid;
+    grid-gap: 12px;
+    margin-top: 50px;
+    background-color: transparent;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    object-fit: scale-down;
+    color: black;
+    
+  }
+  h2{
+    text-align: center;
+    font-weight: solid;
+  }
+ a{
+    text-emphasis: none;
+    text-decoration: none;
+    text-decoration-color: none;
+    color: black;
+    
+  }
+  #hover{
+    background-color: #5cdb95;
+    box-shadow: -1px 2px 20px 0px rgba(31,28,27,0.75);
+-webkit-box-shadow: -1px 2px 20px 0px rgba(31,28,27,0.75);
+-moz-box-shadow: -1px 2px 20px 0px rgba(31,28,27,0.75);
+  }
+  #hover:hover{
+    /*transform: translate(5px, -5px);*/
+    transform: scale(1.07);
+    background: #61f8a5;
+  }
+  .one {
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: center;
+    border-radius: 10px;
+  }
+  
+  .two { 
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 10px;
+  }
+  .three {
+    grid-column: 1;
+    grid-row: 2 / 3;
+    border-radius: 10px;
+  }
+  .four {
+    grid-column: 1/3;
+    grid-row: 3/5;
+    border-radius: 10px;
+  }
+  .image{
+    max-width: 80%;
+    margin:15px 15px 15px 15px;
+    float:left;
+    vertical-align: middle;
+    clear: both;
+    text-align: center;
+    border-radius: 30px;
+  }.paraGrid{
+    text-align: start;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-block-start: 2px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 110%;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width:760px){
+    .image{
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    .paraGrid{
+      font-size: 80%
+    }
+  }
